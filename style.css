@@ -1,0 +1,76 @@
+@import 'theme.css';
+
+html {
+	display: grid;
+	place-items: center;
+	height: 100%;
+}
+
+body {
+	color: var(--text-color);
+	background: var(--bg-color);
+	padding: 10px;
+}
+
+body, input, button {
+	font: var(--font-size) var(--font-family);
+}
+
+h1, strong, a {
+	color: var(--theme-color);
+}
+
+h1, p {
+	margin: 10px 0;
+	text-align: center;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+}
+
+label, button {
+	margin-top: 10px;
+}
+
+input, button {
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+input {
+	color: var(--text-color);
+	border: 1px solid var(--theme-color);
+	outline: none;
+	margin-top: 5px;
+}
+
+input, button:hover {
+	background: transparent;
+}
+
+button {
+	color: var(--bg-color);
+	background: var(--theme-color);
+	border: 1px solid var(--theme-color);
+	cursor: pointer;
+	transition: 100ms;
+}
+
+button:hover {
+	color: var(--theme-color);
+}
+
+button:active {
+	border: 1px solid var(--bg-color);
+}
+
+::selection {
+	color: var(--bg-color);
+	background: var(--theme-color);
+}
