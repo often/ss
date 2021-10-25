@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<meta name='description' content='small and secure string generator' />
+		<meta name='viewport' content='width=device-width' />
+		<title>ss</title>
+		<link rel='stylesheet' href='style.css' />
+		<script type='module' src='script.js'></script>
+	</head>
+	<body>
+		<h1>ss</h1>
+		<p>small and secure string generator</p>
+		<noscript><p><strong>* enable javascript *</strong></p></noscript>
+		<label>length: <input type='number' list='length' min='1' /></label>
+		<datalist id='length'>
+			<option value='4'></option>
+			<option value='8'></option>
+			<option value='16'></option>
+			<option value='32'></option>
+			<option value='64'></option>
+			<option value='128'></option>
+			<option value='192'></option>
+			<option value='256'></option>
+			<option value='384'></option>
+			<option value='512'></option>
+		</datalist>
+		<label>characters: <input list='characters' /></label>
+		<datalist id='characters'>
+			<option value='0123456789'>0-9</option>
+			<option value='abcdefghijklmnopqrstuvwxyz'>a-z</option>
+			<option value='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'>a-zA-Z</option>
+			<option value='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'>a-zA-Z0-9</option>
+			<option value='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()[]'>a-zA-Z0-9!@#$%^&*()[]</option>
+		</datalist>
+		<button>generate</button>
+		<label>output: <input readonly /></label>
+		<button>copy</button>
+		<p><a href='https://github.com/often/ss' target='_blank' rel='noopener'>view on github</a></p>
+	</body>
+</html>
