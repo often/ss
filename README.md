@@ -1,4 +1,4 @@
-# [ss](https://ss.sany.one)
+# [ss](https://often.github.io/ss/)
 small and secure string generator
 
 ## why?
@@ -19,7 +19,7 @@ it makes use of `crypto.getRandomValues` since the `Math.random` function return
 
 ## an example of using the library
 ```js
-import { ss, random } from 'https://ss.sany.one/lib.js'
+import { ss, random } from 'https://often.github.io/ss/lib.js'
 
 console.log(ss(10, '0123456789'))
 console.log(ss(26, 'abcdefghijklmnopqrstuvwxyz'))
